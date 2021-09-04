@@ -1,0 +1,103 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>forms</title>
+</head>
+<body>
+    <section>
+        <h1>Create an account</h1>
+        <form action="submission.html" method="POST">
+            <div class="text-container">
+                <p>            
+                    <label for="name">Full name </label>
+                </p>
+                <p>
+                    <label for="email">Email </label>
+                </p>
+                <p>
+                    <label for="usename">Username </label>
+                </p>
+                <p>
+                    <label for="password">Password </label>
+                </p>
+                <p>
+                    <label for="password2">Repeat Password</label>
+                </p>
+
+            </div>
+            <div class="input-container">
+                <p>            
+                    <input type="text" name="name" id="name" required>
+                </p>
+                <p>
+                    <input type="text" name="username" id="email" required>
+                </p>
+                <p>
+                    <input type="text" name="username" id="username" required>
+                </p>
+                <p>
+                    <input type="password" name="password" id="password" minlength="5" required>
+                </p>
+                <p>
+                    <input type="password" name="password2" id="password2" minlength="5" required>
+                </p>
+
+            </div>
+            <br>
+            <br>
+            <hr>
+            <br>
+            <h2>More info (optional)</h2>
+            <div class="text-container">
+                <p>
+                    <label for="dateofbirth">Date of birth (y-m-d)</label>
+                </p>
+                <p>
+                    <label for="gender">Gender</label>
+                </p>
+
+            </div>
+            <div class="input-container">
+                <p>
+                    <input class="birthdate-y" type="number" id="dateofbirth" name="dateofbirth" value="2021" min="1900" max="2020">
+                    <input class="birthdate-m-d" type="number" id="dateofbirth1" name="dateofbirth1" value="9"  min="1" max="12">
+                    <input class="birthdate-m-d" type="number" id="dateofbirth2" name="dateofbirth2" value="4"  min="1" max="31">
+                </p>
+                <p>
+                    <input list="gender">
+  
+                        <datalist id="gender">
+                            <option value="Male" />
+                            <option value="Female" />
+                            <option value="Non-Binary" />
+                        </datalist>
+
+                </p>
+
+            </div>
+            <p style="text-align: left; padding-left: 60px;">
+                <label for="aboutyou">About you: </label>
+            </p>
+            <p>
+                <textarea name="aboutyou" id="" cols="50" rows="10" id="aboutyou" maxlength="250"></textarea>
+            </p>
+            <br>
+            <hr>
+            <br>
+            <p class="confirmation">
+                <input type="checkbox" id="check" name="check" class="width1" required>
+                <label for="check">I read and understood the <a href="">terms of conditions</a> & <a href="">privacy policy</a></label>
+            </p>
+            <br>
+            <input type="submit" value="Sign Up" class="sign-up">
+
+
+        </form>
+    </section>
+
+    
+</body>
+</html>

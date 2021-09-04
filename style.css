@@ -1,0 +1,96 @@
+html {
+    font-family: monospace, sans-serif;
+    background-color: azure;
+}
+
+hr {
+    position: relative;
+    width: 20%;
+    border-top: 3px dotted #6a93ba;
+}
+
+h1 {
+    opacity: 75%;
+}
+
+h2 {
+    font-size: 18px;
+    opacity: 75%;
+}
+
+label {
+    color: black;
+    opacity: 85%;
+}
+
+input {
+    border: none;
+    height: 19px;
+    margin-left: 15px;
+    width: 200px;
+}
+
+p {
+    font-size: 16px;
+    margin: 15px 0px 15px 0px;
+}
+
+a { 
+    text-decoration: none;
+    color: cornflowerblue;
+}
+
+a:hover {
+    color: rgb(58, 104, 190);
+}
+
+section {
+    margin: 50px auto;
+    text-align: center;
+    width: 35%;
+    background-color: #e5f5ff;
+    border-radius: 15px;
+    padding: 20px 12px;
+}
+
+textarea {
+    border: none;
+}
+
+.text-container {
+    display: inline-block;
+    text-align: left;
+}
+
+.input-container {
+    display: inline-block;
+}
+
+.birthdate-y {
+    width: 60px;
+}
+
+.birthdate-m-d {
+    width: 40px;
+}
+
+.confirmation {
+    font-size: 12px;
+}
+
+.width1 {
+    width: 20px;
+    height: 15px;
+}
+
+.sign-up {
+    border-radius: 5px;
+    background-color: #e5f5ff;
+    border: 2px solid rgb(145 196 255);
+    height: 30px;
+    width: 90px;
+}
+
+.sign-up:hover {
+    background-color: rgb(227, 237, 255);
+}
