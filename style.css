@@ -12,12 +12,13 @@ hr {
 h1 {
     opacity: 85%;
     font-size: 35px;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
 }
 
 h2 {
-    font-size: 18px;
+    font-size: 20px;
     opacity: 75%;
+    margin-bottom: 50px;
 }
 
 label {
@@ -34,13 +35,13 @@ label {
     border: none;
     height: 20px;
     margin-left: 20px;
-    width: 270px;
+    width: 400px;
     outline-style: none;
     background-image: linear-gradient(to right,  #aadefd, rgb(164 185 227));
     color: rgb(56, 56, 56);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 11px 5px;
-    margin-bottom: 0.5;
+    padding: 16px 5px;
+    margin-bottom: 10;
 }
 
 p {
@@ -97,10 +98,12 @@ button:hover {
 }
 
 .birthdate-y {
+    padding: 10px 0;
     width: 60px;
 }
 
 .birthdate-m-d {
+    padding: 10px 0;
     width: 50px;
 }
 
@@ -127,5 +130,6 @@ button:hover {
 }
 
 .gender {
+    padding: 5px 0;
     width: 210px;
 }

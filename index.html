@@ -1,49 +1,32 @@
 <html lang="en" id="1">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="darkmode.js" defer></script>
     <title>forms</title>
     
 </head>
 <body>
-    <section>
+    <button id="theme">Dark Mode</button>
+    <section id="section">
         <h1>Create an account</h1>
         <form action="submission.html" method="POST">
-            <div class="text-container">
-                <p class="label">            
-                    <label for="name">Full name </label>
-                </p>
-                <p class="label">
-                    <label for="email">Email </label>
-                </p>
-                <p class="label">
-                    <label for="usename">Username </label>
-                </p>
-                <p class="label">
-                    <label for="password">Password </label>
-                </p>
-                <p class="label">
-                    <label for="password2">Repeat Password</label>
-                </p>
-
-            </div>
             <div class="input-container">
                 <p>            
-                    <input type="text" name="name" id="name" class="input" required>
+                    <input placeholder="Full Name" type="text" name="name" id="name" class="input" required>
                 </p>
                 <p>
-                    <input type="text" name="username" id="email" class="input" required>
+                    <input placeholder="Email" type="text" name="email" id="email" class="input" required>
                 </p>
                 <p>
-                    <input type="text" name="username" id="username" class="input" required>
+                    <input placeholder="Username" type="text" name="username" id="username" class="input" required>
                 </p>
                 <p>
-                    <input type="password" name="password" id="password" class="input" minlength="5" required>
+                    <input placeholder="Password" type="password" name="password" id="password" class="input" minlength="5" required>
                 </p>
                 <p>
-                    <input type="password" name="password2" id="password2" class="input" minlength="5" required>
+                    <input placeholder="Repeat Password" type="password" name="password2" id="password2" class="input" minlength="5" required>
                 </p>
 
             </div>
@@ -62,12 +45,12 @@
 
             </div>
             <div class="input-container">
-                <p>
+                <p style="margin: 0;">
                     <input class="birthdate-y input" type="number" id="dateofbirth" name="dateofbirth" value="2021" min="1900" max="2020">
                     <input class="birthdate-m-d input" type="number" id="dateofbirth1" name="dateofbirth1" value="9"  min="1" max="12">
                     <input class="birthdate-m-d input" type="number" id="dateofbirth2" name="dateofbirth2" value="4"  min="1" max="31">
                 </p>
-                <p>
+                <p style="margin: 10px 0 0 0;">
                     <input list="gender" class="input gender">
   
                         <datalist id="gender">
@@ -79,11 +62,16 @@
                 </p>
 
             </div>
-            <p style="text-align: left; padding-left: 116px;">
+                
+
+            
+                
+            <p style="padding-right: 40%; margin-top: 30px;">
                 <label for="aboutyou">About you: </label>
             </p>
             <p>
-                <textarea name="aboutyou" id="" cols="45" rows="10" id="aboutyou" maxlength="1000"></textarea>
+                
+                <textarea name="aboutyou" id="text" cols="50" rows="14" id="aboutyou" maxlength="1000"></textarea>
             </p>
             <br>
             <hr>
@@ -93,9 +81,10 @@
                 <label for="check">I read and understood the <a href="">terms of conditions</a> & <a href="">privacy policy</a></label>
             </p>
             <br>
-            <input type="submit" value="Sign Up" class="sign-up">
+            <input type="submit" value="Sign Up" class="sign-up" id='signup'>
         </form>
     </section>
+    
 
     
 </body>
